@@ -1,0 +1,492 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>𝗧𝗥𝗔𝗗𝗘 𝗪𝗜𝗧𝗛 𝗠𝗨𝗡𝗔𝗔𝗙 ™ | Stock Market Telegram Channel</title>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1424927319536780');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1424927319536780&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0a0d10;
+    --panel: #12171b;
+    --panel-border: #1f2831;
+    --green: #16c784;
+    --red: #ff4d5e;
+    --gold: #f0b90b;
+    --text: #eef2f4;
+    --muted: #8fa0ab;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+    min-height:100vh;
+  }
+  h1,h2,h3{font-family:'Space Grotesk',sans-serif;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  a{text-decoration:none; color:inherit;}
+
+  /* ---------- TICKER ---------- */
+  .ticker-wrap{
+    width:100%;
+    background:#000;
+    border-bottom:1px solid var(--panel-border);
+    overflow:hidden;
+    position:sticky;
+    top:0;
+    z-index:50;
+    height:38px;
+    display:flex;
+    align-items:center;
+  }
+  .ticker-track{
+    display:flex;
+    white-space:nowrap;
+    animation:scrollTicker 32s linear infinite;
+  }
+  .ticker-item{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    padding:0 22px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:12.5px;
+    letter-spacing:0.3px;
+  }
+  .ticker-item .sym{color:var(--muted); font-weight:500;}
+  .ticker-item .price{color:var(--text); font-weight:700;}
+  .up{color:var(--green);}
+  .down{color:var(--red);}
+  @keyframes scrollTicker{
+    0%{transform:translateX(0);}
+    100%{transform:translateX(-50%);}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    padding:56px 20px 44px;
+    text-align:center;
+    isolation:isolate;
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+      linear-gradient(180deg, rgba(6,8,10,0.88) 0%, rgba(6,8,10,0.93) 55%, var(--bg) 100%),
+      url('https://4kwallpapers.com/images/wallpapers/day-trading-2048x2048-13833.jpg') center/cover no-repeat;
+    z-index:-1;
+  }
+  .logo-ring{
+    width:104px; height:104px;
+    border-radius:50%;
+    padding:3px;
+    margin:0 auto 18px;
+    background:conic-gradient(from 180deg, var(--green), var(--gold), var(--green));
+    box-shadow:0 0 40px rgba(22,199,132,0.25);
+  }
+  .logo-ring img{
+    width:100%; height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    border:3px solid var(--bg);
+  }
+  .verified-badge{
+    display:inline-flex; align-items:center; gap:6px;
+    background:rgba(22,199,132,0.1);
+    border:1px solid rgba(22,199,132,0.35);
+    color:var(--green);
+    font-size:12px; font-weight:600;
+    padding:5px 12px;
+    border-radius:100px;
+    margin-bottom:14px;
+    letter-spacing:0.3px;
+  }
+  .hero h1{
+    font-size:clamp(26px, 6vw, 40px);
+    font-weight:700;
+    line-height:1.15;
+    margin-bottom:8px;
+  }
+  .hero .role{
+    color:var(--gold);
+    font-size:clamp(14px,3.4vw,17px);
+    font-weight:500;
+    margin-bottom:20px;
+  }
+  .stat-row{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-bottom:26px;
+  }
+  .stat-chip{
+    background:var(--panel);
+    border:1px solid var(--panel-border);
+    border-radius:12px;
+    padding:10px 18px;
+    min-width:120px;
+  }
+  .stat-chip .num{
+    font-family:'JetBrains Mono',monospace;
+    font-weight:700;
+    font-size:19px;
+    color:var(--text);
+  }
+  .stat-chip .lbl{
+    font-size:11px;
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:0.6px;
+    margin-top:2px;
+  }
+  .stat-chip.live .num{color:var(--green);}
+
+  .cta-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:linear-gradient(135deg, var(--green), #0fa96e);
+    color:#04140c;
+    font-weight:700;
+    font-size:16px;
+    padding:16px 34px;
+    border-radius:14px;
+    box-shadow:0 10px 30px rgba(22,199,132,0.28);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cta-btn:active{transform:scale(0.97);}
+  .cta-btn svg{width:20px; height:20px; flex-shrink:0;}
+
+  /* ---------- REDIRECT CARD ---------- */
+  .redirect-card{
+    max-width:360px;
+    margin:26px auto 0;
+    background:var(--panel);
+    border:1px solid var(--panel-border);
+    border-radius:16px;
+    padding:16px 18px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    text-align:left;
+  }
+  .ring-wrap{position:relative; width:52px; height:52px; flex-shrink:0;}
+  .ring-wrap svg{transform:rotate(-90deg);}
+  .ring-bg{fill:none; stroke:#1f2831; stroke-width:4;}
+  .ring-fg{fill:none; stroke:var(--gold); stroke-width:4; stroke-linecap:round; transition:stroke-dashoffset 1s linear;}
+  .ring-num{
+    position:absolute; inset:0;
+    display:flex; align-items:center; justify-content:center;
+    font-family:'JetBrains Mono',monospace;
+    font-weight:700; font-size:16px; color:var(--gold);
+  }
+  .redirect-txt{font-size:12.5px; color:var(--muted); line-height:1.4;}
+  .redirect-txt b{color:var(--text);}
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:44px 20px; max-width:760px; margin:0 auto;}
+  .section-eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    color:var(--gold);
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-bottom:8px;
+    text-align:center;
+  }
+  .section-title{
+    font-size:clamp(22px,5vw,30px);
+    text-align:center;
+    margin-bottom:32px;
+  }
+
+  .feature-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+  }
+  .feature-card{
+    background:var(--panel);
+    border:1px solid var(--panel-border);
+    border-radius:14px;
+    padding:20px 16px;
+  }
+  .feature-card .ic{
+    width:38px; height:38px;
+    border-radius:10px;
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:12px;
+    font-size:18px;
+  }
+  .feature-card:nth-child(1) .ic{background:rgba(22,199,132,0.12); color:var(--green);}
+  .feature-card:nth-child(2) .ic{background:rgba(240,185,11,0.12); color:var(--gold);}
+  .feature-card:nth-child(3) .ic{background:rgba(255,77,94,0.12); color:var(--red);}
+  .feature-card:nth-child(4) .ic{background:rgba(22,199,132,0.12); color:var(--green);}
+  .feature-card h3{font-size:15px; margin-bottom:6px;}
+  .feature-card p{font-size:13px; color:var(--muted); line-height:1.5;}
+
+  .candle-divider{
+    display:flex; justify-content:center; gap:4px;
+    margin:8px 0 36px;
+    opacity:0.7;
+  }
+  .candle{width:5px; border-radius:2px;}
+  .candle.g{background:var(--green);}
+  .candle.r{background:var(--red);}
+
+  .market-note{
+    background:var(--panel);
+    border:1px solid var(--panel-border);
+    border-left:3px solid var(--gold);
+    border-radius:10px;
+    padding:18px 20px;
+    font-size:14px;
+    color:var(--muted);
+    line-height:1.7;
+    margin-bottom:16px;
+  }
+  .market-note b{color:var(--text);}
+
+  .join-again{
+    text-align:center;
+    padding:40px 20px 20px;
+  }
+  .join-again p{color:var(--muted); font-size:13.5px; margin-bottom:16px;}
+
+  /* ---------- FOOTER / ADS ---------- */
+  footer{
+    border-top:1px solid var(--panel-border);
+    padding:26px 20px 34px;
+    text-align:center;
+  }
+  .ads-credit{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--panel);
+    border:1px solid var(--panel-border);
+    border-radius:100px;
+    padding:8px 16px;
+    font-size:12px;
+    color:var(--muted);
+  }
+  .ads-credit a{color:var(--gold); font-weight:600;}
+  .fine-print{
+    margin-top:14px;
+    font-size:11px;
+    color:#4d5a63;
+  }
+
+  @media (min-width:640px){
+    .feature-grid{grid-template-columns:repeat(4,1fr);}
+    .hero{padding:72px 20px 56px;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .ticker-track{animation:none;}
+  }
+</style>
+</head>
+  <!-- Meta Pixel Code -->
+
+<body>
+
+  <!-- TICKER TAPE -->
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" style="max-width:none;">
+    <div class="logo-ring">
+      <img src="https://growwvix.pro/wp-content/uploads/2026/08/munnaf-logo.jpg" alt="𝗧𝗥𝗔𝗗𝗘 𝗪𝗜𝗧𝗛 𝗠𝗨𝗡𝗔𝗔𝗙 ™ logo">
+    </div>
+    <div class="verified-badge">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Verified Trading Channel
+    </div>
+    <h1>𝗧𝗥𝗔𝗗𝗘 𝗪𝗜𝗧𝗛 𝗠𝗨𝗡𝗔𝗔𝗙 ™</h1>
+    <div class="role">Stock Market Trader &amp; Educator</div>
+
+    <div class="stat-row">
+      <div class="stat-chip live">
+        <div class="num mono">4,719+</div>
+        <div class="lbl">Subscribers</div>
+      </div>
+      <div class="stat-chip">
+        <div class="num mono">Daily</div>
+        <div class="lbl">Market Updates</div>
+      </div>
+      <div class="stat-chip">
+        <div class="num mono">Free</div>
+        <div class="lbl">Access</div>
+      </div>
+    </div>
+
+    <a href="https://t.me/+zFA__rDLIogxNWU1" class="cta-btn" id="joinBtn">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.05 3.5L2.9 10.7c-1.2.48-1.19 1.15-.22 1.45l4.66 1.46 1.8 5.5c.22.6.4.85.85.85.43 0 .6-.2.85-.5l2.06-2 4.3 3.15c.79.44 1.35.21 1.55-.73l2.8-13.2c.3-1.2-.4-1.75-1.4-1.18z"/></svg>
+      Join Free Telegram Channel
+    </a>
+
+    <div class="redirect-card">
+      <div class="ring-wrap">
+        <svg width="52" height="52" viewBox="0 0 52 52">
+          <circle class="ring-bg" cx="26" cy="26" r="22"/>
+          <circle class="ring-fg" id="ringFg" cx="26" cy="26" r="22" stroke-dasharray="138.2" stroke-dashoffset="0"/>
+        </svg>
+        <div class="ring-num" id="ringNum">10</div>
+      </div>
+      <div class="redirect-txt">
+        Aapko <b>automatically Telegram</b> par redirect kiya ja raha hai. Agar redirect na ho to upar wale button par tap karein.
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section>
+    <div class="section-eyebrow">Kyun Join Karein</div>
+    <h2 class="section-title">Channel Me Kya Milega</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="ic">📈</div>
+        <h3>Daily Market Analysis</h3>
+        <p>Nifty, Bank Nifty aur Sensex ka roz ka technical breakdown.</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic">🎯</div>
+        <h3>Stock Picks</h3>
+        <p>Short-term aur swing trading ke liye tracked stock ideas.</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic">🛡️</div>
+        <h3>Risk Management</h3>
+        <p>Stop-loss aur position sizing ke practical tareeke.</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic">📚</div>
+        <h3>Market Education</h3>
+        <p>Chart patterns aur basics beginners ke liye simple bhasha me.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="candle-divider" id="candleDivider"></div>
+
+  <!-- MARKET CONTENT -->
+  <section style="padding-top:0;">
+    <div class="section-eyebrow">Market Pulse</div>
+    <h2 class="section-title">Aaj Ka Bazar</h2>
+    <div class="market-note">
+      <b>Nifty 50</b> ne pichle session me consolidation dikhaya, jabki <b>Bank Nifty</b> me higher levels par selling pressure dekha gaya. Traders ke liye important hai ki wo apne trades me strict stop-loss follow karein aur overtrading se bachein.
+    </div>
+    <div class="market-note">
+      <b>IT aur Pharma</b> sector me relative strength dikh rahi hai, jabki <b>Metal stocks</b> global cues ke hisaab se volatile bane hue hain. Detailed sector-wise analysis roz channel par post hota hai.
+    </div>
+    <div class="market-note">
+      Yaad rakhein — stock market me trading se pehle apni <b>research aur risk appetite</b> zaroor check karein. Yeh content sirf educational purpose ke liye hai, investment advice nahi.
+    </div>
+  </section>
+
+  <div class="join-again">
+    <p>4,719+ traders already jud chuke hain — aap bhi free me join karein.</p>
+    <a href="https://t.me/+zFA__rDLIogxNWU1" class="cta-btn">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.05 3.5L2.9 10.7c-1.2.48-1.19 1.15-.22 1.45l4.66 1.46 1.8 5.5c.22.6.4.85.85.85.43 0 .6-.2.85-.5l2.06-2 4.3 3.15c.79.44 1.35.21 1.55-.73l2.8-13.2c.3-1.2-.4-1.75-1.4-1.18z"/></svg>
+      Join Free Telegram channel
+    </a>
+  </div>
+
+  <footer>
+    <div class="ads-credit">
+      Ads by <a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank" rel="noopener">ADBUILDAGENCY</a>
+    </div>
+    <div class="fine-print">© 2026 Pankaj Bhardwaj Official · Educational content only, not financial advice.</div>
+  </footer>
+
+<script>
+  // ---- Ticker data ----
+  const tickerData = [
+    {sym:'NIFTY 50', price:'24,812.35', chg:'+0.64%', up:true},
+    {sym:'SENSEX', price:'81,540.20', chg:'+0.58%', up:true},
+    {sym:'BANK NIFTY', price:'51,204.75', chg:'-0.32%', up:false},
+    {sym:'RELIANCE', price:'2,945.10', chg:'+1.12%', up:true},
+    {sym:'TCS', price:'4,182.60', chg:'-0.45%', up:false},
+    {sym:'INFY', price:'1,876.25', chg:'+0.89%', up:true},
+    {sym:'HDFC BANK', price:'1,712.40', chg:'+0.27%', up:true},
+    {sym:'ICICI BANK', price:'1,289.55', chg:'-0.18%', up:false},
+    {sym:'TATA MOTORS', price:'968.30', chg:'+2.05%', up:true},
+    {sym:'ADANI ENT', price:'3,102.75', chg:'-1.24%', up:false},
+  ];
+  function buildTicker(){
+    const track = document.getElementById('tickerTrack');
+    const set = tickerData.map(d => `
+      <span class="ticker-item">
+        <span class="sym">${d.sym}</span>
+        <span class="price mono">${d.price}</span>
+        <span class="${d.up ? 'up':'down'} mono">${d.up?'▲':'▼'} ${d.chg}</span>
+      </span>
+    `).join('');
+    track.innerHTML = set + set; // duplicate for seamless loop
+  }
+  buildTicker();
+
+  // ---- Candle divider (decorative) ----
+  (function(){
+    const wrap = document.getElementById('candleDivider');
+    const heights = [10,18,8,24,14,20,9,16,26,12,19,7,22,15,11];
+    heights.forEach((h,i)=>{
+      const d = document.createElement('div');
+      d.className = 'candle ' + (i % 3 === 0 ? 'r' : 'g');
+      d.style.height = h + 'px';
+      wrap.appendChild(d);
+    });
+  })();
+
+  // ---- Countdown + auto redirect ----
+  const TELEGRAM_URL = "https://t.me/+zFA__rDLIogxNWU1";
+  const TOTAL = 10;
+  const CIRC = 138.2; // 2*pi*22
+  let remaining = TOTAL;
+  const ringFg = document.getElementById('ringFg');
+  const ringNum = document.getElementById('ringNum');
+
+  function tick(){
+    ringNum.textContent = remaining;
+    const offset = CIRC * (1 - remaining / TOTAL);
+    ringFg.style.strokeDashoffset = offset;
+    if(remaining <= 0){
+      window.location.href = TELEGRAM_URL;
+      return;
+    }
+    remaining--;
+    setTimeout(tick, 1000);
+  }
+  tick();
+</script>
+</body>
+</html>
